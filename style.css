@@ -1,0 +1,256 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    overflow-x: hidden;
+}
+body{
+    background-color: white;
+}
+.nav-1 {
+    position: relative;
+    background-color: #212b85;
+    padding: 20px;
+    text-align: center;
+    width: 100vw;
+  }
+  /* Estilos para la lista de elementos del menú */
+  .nav-1 ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  /* Estilos para cada elemento del menú */
+  .nav-1 li {
+    margin-right: 20px;
+    padding: 6px;
+    margin-right: 40px;
+    margin-left: 30px;
+  }
+  .nav-1 a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s ease;
+    border: 0;
+  }
+  .nav-1 input{
+      border: 0;
+      padding: 10px;
+      width: 50vw;
+      border-radius: 15px;
+      margin: 0 none;
+  }
+  .nav-1 a:hover {
+    color: #ff27db;
+  }
+  .nav-1 a:active{
+      color: #202020;
+  }
+.encabezado{
+    width: 100vw;
+    padding: 15px;
+    background-color: rgb(0, 108, 180);
+    /*background-image:linear-gradient(to right,rgb(0, 0, 0),rgb(0, 0, 0,0.6)) ,url();*/
+}
+.menu{
+    position: sticky;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+}
+.menu h1{
+    position: relative;
+    color: rgb(255, 255, 255);
+    left: 100px;
+}
+.navba ul{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+.navba li a{
+    position: relative;
+    margin: 0 70px;
+    color: rgb(255, 255, 255);
+    right: 20px;
+    font-size: 20px;
+}
+.navba li a:hover{
+    color:  #ff27db;
+}
+.navba li a:active{
+    color:  #ff27dbbe;
+}
+.cara_pag{
+    position: relative;
+    background-image:linear-gradient(to right,rgb(21, 83, 255),rgb(0, 255, 242)) ,url(/src/imagencircuito.jpeg);
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding: 180px;
+    color: white;
+    text-shadow: 2px 3px 2px black;
+}
+.innovacion{
+    position:static;
+    display: flex;
+    margin: 60px;
+    justify-content: center;
+    align-items: center;
+}
+.innovacion1, .innovacion2, .innovacion3, .innovacion4{
+    position: relative;
+    padding: 30px;
+    width: 270px;
+    height: 300px;
+    text-align: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: #ffffff;
+    border-radius: 8px;
+    margin: 15px;
+    overflow: hidden;
+    text-align: center;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.534);
+}
+.innovacion1 h2, .innovacion2 h2, .innovacion3 h2, .innovacion4 h2{
+    position: relative;
+    text-align: center;
+    margin-bottom: 15px;
+    color: rgb(0, 0, 0);
+}
+.innovacion1 p, .innovacion2 p, .innovacion3 p, .innovacion4 p{
+    position: relative;
+   text-align: left;
+}
+.innovacion1 button , .innovacion2 button , .innovacion3 button , .innovacion4 button{
+    position: relative;
+    margin-top: 30px;
+    text-align: center;
+    padding: 15px;
+    background-color: rgb(0, 112, 216);
+    border: none;
+    color: white;
+    border-radius: 20px;
+    font-size: 15px;
+    width: 130px;
+}
+.innovacion1 button:hover , .innovacion2 button:hover , .innovacion3 button:hover , .innovacion4 button:hover{
+    background-color: #0026ff;
+
+}
+.part_2{
+    position:static;
+}
+.content-venta{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    margin: 15px;
+    flex-wrap: wrap;
+}
+.content-venta2{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    margin: 15px;
+    flex-wrap: wrap;
+}
+.img-1, .img-2, .img-3, .img-4, .img-5, .img-6{
+    margin: 20px;
+}
+
+.bold-designer{
+    font-size: 70%;
+}
+.content-venta-tachado{
+    text-decoration:line-through red;
+}
+.part_3{
+    position: static;
+}
+.publicidad_pro{
+    position: relative;
+    background-image:linear-gradient(to right,rgb(21, 83, 255),rgb(0, 255, 242)) ,url();
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    text-align: center;
+    padding: 150px;
+    color: white;
+    text-shadow: 2px 3px 2px black;
+    font-size: 40px;
+}
+.publicidad_pro button{
+    position: relative;
+    margin-top: 30px;
+    text-align: center;
+    padding: 15px;
+    background-color: rgb(0, 112, 216);
+    border: none;
+    color: white;
+    border-radius: 20px;
+    font-size: 15px;
+    width: 130px;
+}
+.publicidad_pro button:hover{
+    background-color: #0026ff;
+}
+.publicidad_pro2{
+    position: relative;
+    background-color: rgba(0, 0, 0, 0.788);
+    color: white;
+    margin-top: 15px;
+    padding: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.publicidad_pro2 button{
+    margin: 15px;
+    position: relative;
+    text-align: center;
+    padding: 15px;
+    background-color: rgb(0, 112, 216);
+    border: none;
+    color: white;
+    border-radius: 20px;
+    font-size: 15px;
+    width: 130px;
+}
+.publicidad_pro2 button:hover{
+    background-color: #0026ff;
+}
+.venta_productos{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    margin: 25px;
+    flex-wrap: wrap;
+}
+.venta_productos h1{
+    font-size: 40px;
+}
+.imagen1, .imagen2, .imagen3{
+    margin: 20px;
+}
+.titulo{
+    text-align: center;
+    margin-top: 15px;
+    font-size: 25px;
+}
