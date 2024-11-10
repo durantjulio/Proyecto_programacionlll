@@ -88,26 +88,10 @@ body{
 .navba li a:active{
     color:  #ff27dbbe;
 }
-.titulo_content{
+.productos{
     position: static;
-
 }
-.titulo_content h1{
-    text-align: center;
-    color: black;
-    font-size: 40px;
-}
-.titulo_content h2{
-    text-align: center;
-    color: black;
-    font-size: 15px;
-}
-.part_content{
-    position:static;
-    margin: 5px;
-    text-align: left;
-}
-.content_pri{
+.content-venta{
     position: relative;
     display: flex;
     justify-content: center;
@@ -116,7 +100,7 @@ body{
     margin: 15px;
     flex-wrap: wrap;
 }
-.content_sec{
+.content-venta2{
     position: relative;
     display: flex;
     justify-content: center;
@@ -125,18 +109,51 @@ body{
     margin: 15px;
     flex-wrap: wrap;
 }
-.content_pri p, .content_sec p{
-    font-size: 20px;
-}
-.historia, .img-1{
+.content-venta3{
     position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    margin: 15px;
+    flex-wrap: wrap;
+}
+.content-venta4{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    margin: 15px;
+    flex-wrap: wrap;
+}
+.img-1, .img-2, .img-3, .img-4, .img-5, .img-6, .img-7, .img-8, .img-9, .img-10{
     margin: 20px;
-    bottom: 65px;
+    text-align: center;
+    background-color: rgb(255, 255, 255);
+    padding: 25px;
+    border-radius: 10px;
+    box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.534);
 }
-.mision, .vision{
-    margin-right: 100px;
+
+.bold-designer{
+    font-size: 70%;
 }
-.mision h2, .vision h2, .historia h2{
-    text-align: left;
-    font-size: 25px;
+.content-venta-tachado{
+    text-decoration:line-through red;
+}
+button{
+    margin: 15px;
+    position: relative;
+    text-align: center;
+    padding: 15px;
+    background-color: rgb(0, 112, 216);
+    border: none;
+    color: white;
+    border-radius: 20px;
+    font-size: 15px;
+    width: 130px;
+}
+button:hover{
+    background-color: #0026ff;
 }
