@@ -1,0 +1,142 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    overflow-x: hidden;
+}
+body{
+    background-color: white;
+}
+.nav-1 {
+    position: relative;
+    background-color: #212b85;
+    padding: 20px;
+    text-align: center;
+    width: 100vw;
+  }
+  /* Estilos para la lista de elementos del menú */
+  .nav-1 ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  /* Estilos para cada elemento del menú */
+  .nav-1 li {
+    margin-right: 20px;
+    padding: 6px;
+    margin-right: 40px;
+    margin-left: 30px;
+  }
+  .nav-1 a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.2s ease;
+    border: 0;
+  }
+  .nav-1 input{
+      border: 0;
+      padding: 10px;
+      width: 50vw;
+      border-radius: 15px;
+      margin: 0 none;
+  }
+  .nav-1 a:hover {
+    color: #ff27db;
+  }
+  .nav-1 a:active{
+      color: #202020;
+  }
+.encabezado{
+    width: 100vw;
+    padding: 15px;
+    background-color: rgb(0, 108, 180);
+    /*background-image:linear-gradient(to right,rgb(0, 0, 0),rgb(0, 0, 0,0.6)) ,url();*/
+}
+.menu{
+    position: sticky;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+}
+.menu h1{
+    position: relative;
+    color: rgb(255, 255, 255);
+    left: 100px;
+}
+.navba ul{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+}
+.navba li a{
+    position: relative;
+    margin: 0 70px;
+    color: rgb(255, 255, 255);
+    right: 20px;
+    font-size: 20px;
+}
+.navba li a:hover{
+    color:  #ff27db;
+}
+.navba li a:active{
+    color:  #ff27dbbe;
+}
+.titulo_content{
+    position: static;
+
+}
+.titulo_content h1{
+    text-align: center;
+    color: black;
+    font-size: 30px;
+}
+.titulo_content h2{
+    text-align: center;
+    color: black;
+    font-size: 15px;
+}
+.part_content{
+    position:static;
+    margin: 5px;
+    text-align: left;
+}
+.content_pri{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    margin: 15px;
+    flex-wrap: wrap;
+}
+.content_sec{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+    margin: 15px;
+    flex-wrap: wrap;
+}
+.content_pri p, .content_sec p{
+    font-size: 20px;
+}
+.historia, .img-1{
+    position: relative;
+    margin: 20px;
+    bottom: 65px;
+}
+.mision, .vision{
+    margin-right: 100px;
+}
+.mision h2, .vision h2, .historia h2{
+    text-align: left;
+    font-size: 25px;
+}
