@@ -33,7 +33,7 @@
         .img-1:hover, .img-2:hover, .img-3:hover, .img-4:hover, .img-5:hover, .img-6:hover,.img-7:hover, .img-8:hover {
             transform: scale(1.05); /* Escala al pasar el mouse */
         }
-        .buy-button {
+        .buy-button, .specs-button  {
             background-color: #007BFF; /* Color del botón */
             color: white;
             border: none;
@@ -42,7 +42,7 @@
             cursor: pointer;
             transition: background-color 0.3s, transform 0.2s; /* Animación */
         }
-        .buy-button:hover {
+        .buy-button:hover, .specs-button :hover {
             background-color: #0056b3; /* Color más oscuro al pasar el mouse */
             transform: translateY(-2px); /* Levanta el botón al pasar el mouse */
         }
@@ -90,59 +90,99 @@
                 <p><span class="bold-designer"><strong>Producto 1</strong></span><br>
                     <span class="content-venta-tachado">$ 100.00 </span> <strong class="bold">$70</strong>
                 </p>
-                <button class="buy-button" data-product-id="1" data-product-name="Producto 1" data-product-price="70">comprar</button>
+                <button class="buy-button" data-product-id="1" data-product-name="Producto 1" data-product-price="70">Comprar</button>
+                <button class="specs-button" data-toggle="modal" data-target="#specsModal" data-specs="Laptop Dell Latitude 15 3520 - Intel Ci7 1165G7 - 256GB SSD NVMe - 8GB RAM - Win 10 Pro">Especificaciones</button>
             </div>
             <div class="img-2">
                 <img src="/src/tlf.jpg.jpeg" alt="" width="200px" height="200px">
                 <p><span class="bold-designer"><strong>Producto 2</strong></span><br>
                     <span class="content-venta-tachado">$ 100.00 </span> <strong class="bold">$70</strong>
                 </p>
-                <button class="buy-button" data-product-id="2" data-product-name="Producto 2" data-product-price="70">comprar</button>
+                <button class="buy-button" data-product-id="2" data-product-name="Producto 2" data-product-price="70">Comprar</button>
+                <button class="specs-button" data-toggle="modal" data-target="#specsModal" data-specs="Especificaciones del Producto 2">Especificaciones</button>
             </div>
             <div class="img-3">
                 <img src="/src/descarga (1).jpg" alt="" width="200px" height="200px">
                 <p><span class="bold-designer"><strong>Producto 3</strong></span><br>
                     <span class="content-venta-tachado">$ 100.00 </span> <strong class="bold">$70</strong>
                 </p>
-                <button class="buy-button" data-product-id="3" data-product-name="Producto 3" data-product-price="70">comprar</button>
+                <button class="buy-button" data-product-id="3" data-product-name="Producto 3" data-product-price="70">Comprar</button>
+                <button class="specs-button" data-toggle="modal" data-target="#specsModal" data-specs="Especificaciones del Producto 3">Especificaciones</button>
             </div>
             <div class="img-4">
                 <img src="/src/pcpi22.jpeg" alt="" width="200px" height="200px">
                 <p><span class="bold-designer"><strong>Producto 4</strong></span><br>
                     <span class="content-venta-tachado">$ 100.00 </span> <strong class="bold">$70</strong>
                 </p>
-                <button class="buy-button" data-product-id="4" data-product-name="Producto 4" data-product-price="70">comprar</button>
+                <button class="buy-button" data-product-id="4" data-product-name="Producto 4" data-product-price="70">Comprar</button>
+                <button class="specs-button" data-toggle="modal" data-target="#specsModal" data-specs="Especificaciones del Producto 4">Especificaciones</button>
             </div>
             <div class="img-5">
                 <img src="/src/equipazo.jpeg" alt="" width="200px" height="200px">
                 <p><span class="bold-designer"><strong>Producto 5</strong></span><br>
                     <span class="content-venta-tachado">$ 100.00 </span> <strong class="bold">$70</strong>
                 </p>
-                <button class="buy-button" data-product-id="5" data-product-name="Producto 5" data-product-price="70">comprar</button>
+                <button class="buy-button" data-product-id="5" data-product-name="Producto 5" data-product-price="70">Comprar</button>
+                <button class="specs-button" data-toggle="modal" data-target="#specsModal" data-specs="Especificaciones del Producto 5">Especificaciones</button>
             </div>
             <div class="img-6">
                 <img src="/src/equipazo2.jpeg" alt="" width="200px" height="200px">
                 <p><span class="bold-designer"><strong>Producto 6</strong></span><br>
                     <span class="content-venta-tachado">$ 100.00 </span> <strong class="bold">$70</strong>
                 </p>
-                <button class="buy-button" data-product-id="6" data-product-name="Producto 6" data-product-price="70">comprar</button>
+                <button class="buy-button" data-product-id="6" data-product-name="Producto 6" data-product-price="70">Comprar</button>
+                <button class="specs-button" data-toggle="modal" data-target="#specsModal" data-specs="Especificaciones del Producto 6">Especificaciones</button>
             </div>
             <div class="img-5">
                 <img src="/src/laptico.jpeg" alt="" width="200px" height="200px">
                 <p><span class="bold-designer"><strong>Producto 7</strong></span><br>
                     <span class="content-venta-tachado">$ 100.00 </span> <strong class="bold">$70</strong>
                 </p>
-                <button class="buy-button" data-product-id="7" data-product-name="Producto 7" data-product-price="70">comprar</button>
+                <button class="buy-button" data-product-id="7" data-product-name="Producto 7" data-product-price="70">Comprar</button>
+                <button class="specs-button" data-toggle="modal" data-target="#specsModal" data-specs="Laptop Dell Inspiron 15 3505 - AMD Ryzen 7 3700U - 512GB SSD NVMe - 8GB RAM - Win 10 Home
+                ">Especificaciones</button>
             </div>
             <div class="img-6">
                 <img src="/src/Computer.jpg" alt="" width="200px" height="200px">
                 <p><span class="bold-designer"><strong>Producto 8</strong></span><br>
                     <span class="content-venta-tachado">$ 100.00 </span> <strong class="bold">$70</strong>
                 </p>
-                <button class="buy-button" data-product-id="8" data-product-name="Producto 8" data-product-price="70">comprar</button>
+                <button class="buy-button" data-product-id="8" data-product-name="Producto 8" data-product-price="70">Comprar</button>
+                <button class="specs-button" data-toggle="modal" data-target="#specsModal" data-specs="Especificaciones del Producto 8">Especificaciones</button>
             </div>
             <!-- Agrega más productos según sea necesario -->
         </div>
     </section>
+        <!-- Modal para Especificaciones -->
+    <div class="modal fade" id="specsModal" tabindex="-1" role="dialog" aria-labelledby="specsModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="specsModalLabel">Especificaciones del Producto</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <p id="specsContent">Aquí se mostrarán las especificaciones del producto seleccionado.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function() {
+            $('.specs-button').on('click', function() {
+                var specs = $(this).data('specs');
+                $('#specsContent').text(specs);
+            });
+        });
+    </script>
 </body>
 </html>
