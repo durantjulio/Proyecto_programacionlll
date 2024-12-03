@@ -45,7 +45,7 @@ body{
       margin: 0 none;
   }
   .nav-1 a:hover {
-    color: #ff27db;
+    color: #14f7ff;
   }
   .nav-1 a:active{
       color: #202020;
@@ -83,23 +83,13 @@ body{
     font-size: 20px;
 }
 .navba li a:hover{
-    color:  #ff27db;
+    color: #14f7ff;
 }
 .navba li a:active{
-    color:  #ff27dbbe;
+    color: #45d3d8;
 }
-.cara_pag{
-    position: relative;
-    background-image:linear-gradient(to right,rgb(21, 83, 255),rgb(0, 255, 242)) ,url(/src/imagencircuito.jpeg);
-    background-size: cover;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    text-align: center;
-    padding: 180px;
-    color: white;
-    text-shadow: 2px 3px 2px black;
-}
+
+/*
 .innovacion{
     position:static;
     display: flex;
@@ -146,7 +136,7 @@ body{
 .innovacion1 button:hover , .innovacion2 button:hover , .innovacion3 button:hover , .innovacion4 button:hover{
     background-color: #0026ff;
 
-}
+}*/
 .part_2{
     position:static;
 }
@@ -203,9 +193,9 @@ body{
 }
 .publicidad_pro{
     position: relative;
-    background-image:linear-gradient(to right,rgb(21, 83, 255),rgb(0, 255, 242)) ,url();
+    background-image:linear-gradient(to right,rgba(0, 0, 0, 0.507),rgba(0, 0, 0, 0.507)) ,url(src/kirokaze\ -\ Pixel\ art\ Gif.gif);
     background-size: cover;
-    background-attachment: fixed;
+    
     background-position: center;
     background-repeat: no-repeat;
     text-align: center;
@@ -221,7 +211,7 @@ body{
     padding: 15px;
     background-color: rgb(0, 112, 216);
     border: none;
-    color: white;
+    color: rgb(0, 0, 0);
     border-radius: 20px;
     font-size: 15px;
     width: 130px;

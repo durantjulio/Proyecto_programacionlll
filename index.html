@@ -5,8 +5,85 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eecomerse</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+     integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" 
+     crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+
+        .icon {
+            font-size: 34px; /* Tamaño del ícono */
+            margin-right: 8px; /* Espaciado entre íconos y texto */
+        }
+        .cara_pag{
+            position: relative;
+            background-image:url(src/fondo-hexagonos.png);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            text-align: center; 
+            padding: 180px;
+            color: rgb(0, 0, 0);
+            text-shadow: 2px 3px 2px rgba(0, 89, 255, 0.493);
+            overflow: hidden; /* Oculta el desbordamiento */
+            text-overflow: ellipsis; /* Agrega puntos suspensivos si el texto es demasiado largo */
+            margin: 0; /* Elimina márgenes */
+            font-size: 2rem; /* Ajusta el tamaño de fuente según sea necesario */
+        
+        }
+        
+        /*
+        .innovacion {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            margin: 60px;
+            overflow: hidden; /* Evita la barra de desplazamiento 
+        }
+        .innovacion div {
+            padding: 30px;
+            width: 270px;
+            height: 300px;
+            text-align: center;
+            background-color: #ffffff;
+            border-radius: 8px;
+            margin: 15px;
+            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.534);
+            transition: transform 0.2s; /* Animación al pasar el mouse 
+        }
+        .innovacion div:hover {
+            transform: scale(1.05); /* Aumenta el tamaño al pasar el mouse 
+        }
+        .innovacion h2 {
+            color: rgb(0, 0, 0);
+        }
+        .innovacion p {
+            text-align: left;
+        }
+        .innovacion button {
+            margin-top: 30px;
+            padding: 15px;
+            background-color: rgb(0, 112, 216);
+            border: none;
+            color: white;
+            border-radius: 20px;
+            font-size: 15px;
+            transition: background-color 0.3s, transform 0.2s; /* Animación de fondo 
+            width: 100%; /* Hace que el botón ocupe todo el ancho 
+            cursor: pointer; /* Cambia el cursor al pasar por encima 
+        }
+        .innovacion button:hover {
+            background-color: #0026ff; /* Color más oscuro al pasar el mouse 
+            transform: translateY(-2px); /* Levanta el botón al pasar el mouse 
+        }
+        body {
+            overflow: hidden; /* Elimina la barra de desplazamiento de la página 
+        }*/
+    </style>
 </head>
+
 
 <body>
     <section class="part_1">
@@ -14,19 +91,18 @@
             <header>
             <nav class="nav-1">
                 <ul>
-                    <li><p><a href="">Envio gratuito</a></p></li>
-                    <li><input type="text" placeholder="indique un juego" /></li>
-                    <li class="carrito"><a href="/carrito/carrito.html"><img src="src/pngwing.com (21).png" alt="" width="50px" height="50px"></a></li>
+                    <li class="error"><a href="contacto.html"><i class="fa-solid fa-gear icon"></i></a></liU>                    <li><input type="text" placeholder="indique un juego" /></li>
+                    <li class="carrito"><a href="/carrito/carrito.html"><i class="fa-solid fa-cart-shopping icon"></i></a></li>
                     <li><a href="iniciar_sesion.html"><p>Iniciar Secion</p></a></li>
                 </ul>
             </nav>
             <div class="menu encabezado">
                 <nav class="navba">
                     <ul>
-                        <li><a href="index.html">inicio</a></li>
-                        <li><a href="nostros.html">nosotros</a></li>
-                        <li><a href="contacto.html">contacto</a></li>
-                        <li><a href="/carrito/producto.html">producto</a></li>
+                        <li><a href="index.html">Inicio</a></li>
+                        <li><a href="nostros.html">Nosotros</a></li>
+                        <li><a href="contacto.html">Contacto</a></li>
+                        <li><a href="/carrito/producto.html">Producto</a></li>
                         
                     </ul>
                 </nav>
@@ -35,7 +111,7 @@
         </header>
         <div class="cara_pag">
             <h1>INGRESA A NUSTRA TIENDA DE TECNOLOGIA </h1>
-             <p>DISFRUTA DE LO MEJOR EN TECNOLOGIA</p>
+             <p>DISFRUTA DE LO MEJOR DE NUESTROS PRODUCTOS</p>
         </div>
     </main>
 </section>
@@ -45,69 +121,70 @@
     </div>
     <div class="content-venta">
         <div class="img-1">
-            <img src="1.png" alt="" width="200px" height="200px">
-            <p><span class="bold-designer"><strong>BORCELLE CHEIR</strong></span><br>
+            <img src="/src/laptico.jpeg" alt="" width="200px" height="200px">
+            <p><span class="bold-designer"><strong>PRODUCTO</strong></span><br>
                 <span class="content-venta-tachado">$ 100.00 </span> <strong class="bold">$70</strong>
             </p>
-            <button>comprar</button>
+            <a href="carrito/producto.html"><button>Ver</button></a>
         </div>
         <div class="img-2">
-            <img src="16.png" alt="" width="200px" height="200px">
-            <p><span class="bold-designer"><strong>BORCELLE CHEIR</strong></span><br>
+            <img src="/src/pcpi22.jpeg" alt="" width="200px" height="200px">
+            <p><span class="bold-designer"><strong>PRODUCTO</strong></span><br>
                 <span class="content-venta-tachado">$ 100.00 </span> <strong class="bold">$70</strong>
             </p>
-            <button>comprar</button>
+            <a href="carrito/producto.html"><button>Ver</button></a>
         </div>
         <div class="img-3">
-            <img src="3.png" alt="" width="200px" height="200px">
-            <p><span class="bold-designer"><strong>BORCELLE CHEIR</strong></span><br>
+            <img src="/src/tlf.jpg.jpeg" alt="" width="200px" height="200px">
+            <p><span class="bold-designer"><strong>PRODUCTO</strong></span><br>
                 <span class="content-venta-tachado">$ 100.00 </span> <strong class="bold">$70</strong>
             </p>
-            <button>comprar</button>
+            <a href="carrito/producto.html"><button>Ver</button></a>
         </div>
     </div>
-
+<!--
     <div class="innovacion">
         <div class="innovacion1">
             <h2>Servicio al cliente</h2>
             <p>Brindamos la mejor atención y la solución <br> ideal a tus  necesidades de tecnología </br></p>
-            <a href="">
+            <a href="contacto.html">
                 <button>Consultar</button>
             </a>
         </div>
         <div class="innovacion2">
             <h2>Más novedad e innovación</h2>
             <p>Solicita nuestro lista de productos,<br> vas a <br> conseguir lo que buscas. </br> </p>
-            <a href="">
+            <a href="contacto.html">
                 <button>Consultar</button>
             </a>
         </div>
         <div class="innovacion3">
             <h2>¿Tienes dudas con tu compra?</h2>
             <p>¿Problemas con el uso de los productos <br> CRT? Escríbenos y te ayudamos. </br></p>
-            <a href="">
+            <a href="contacto.html">
                 <button>Consultar</button>
             </a>
         </div>
         <div class="innovacion4">
             <h2>¿Tienes dudas con tu compra?</h2>
             <p>¿Problemas con el uso de los productos <br> CRT? Escríbenos y te ayudamos. </br></p>
-            <a href="">
+            <a href="contacto.html">
                 <button>Consultar</button>
             </a>
         </div>
+    -->
     </div>
 </section>
 <section class="part_3">
     <div class="publicidad_pro">
         <h1>COMPUTADORAS</h1>
-        <a href="">
+        <a href="carrito/producto.html">
             <button>Ver modelos</button>
         </a>
     </div>
     <div class="publicidad_pro2">
         <span>Tenemos los mejores equipos con las mejores ofertas del mercado!</span>
-        <a href="">
+        <a href="carrito/producto.html">
             <button>IR A TIENDA</button>
         </a>
     </div>
@@ -116,21 +193,21 @@
     </div>
     <div class="venta_productos">
         <div class="imagen1">
-            <img src="1.png" alt="" width="200px" height="200px">
-            <p><span class="bold-designer"><strong>BORCELLE CHEIR</strong></span><br>
-            <span class="content-venta-tachado">$ 100.00 </span> <strong class="bold">$70</strong>
+            <img src="src/WhatsApp Image 2024-12-02 at 7.29.10 PM.jpeg" alt="" width="350px" height="350px">
+            <p><span class="bold-designer"><strong>JULIO</strong></span><br>
+
             </p> 
         </div>
         <div class="imagen2">
-            <img src="16.png" alt="" width="200px" height="200px">
-            <p><span class="bold-designer"><strong>BORCELLE CHEIR</strong></span><br>
-            <span class="content-venta-tachado">$ 100.00 </span> <strong class="bold">$70</strong>
+            <img src="src/WhatsApp Image 2024-12-02 at 7.29.22 PM.jpeg" alt="" width="350px" height="350px">
+            <p><span class="bold-designer"><strong>Gustavo</strong></span><br>
+            
             </p> 
         </div>
         <div class="imagen3">
-            <img src="3.png" alt="" width="200px" height="200px">
-            <p><span class="bold-designer"><strong>BORCELLE CHEIR</strong></span><br>
-            <span class="content-venta-tachado">$ 100.00 </span> <strong class="bold">$70</strong>
+            <img src="src/WhatsApp Image 2024-12-02 at 7.29.32 PM.jpeg" alt="" width="350px" height="350px">
+            <p><span class="bold-designer"><strong>Joandri</strong></span><br>
+
             </p>
         </div>
     </div>

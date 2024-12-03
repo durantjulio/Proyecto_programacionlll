@@ -45,7 +45,7 @@ body{
       margin: 0 none;
   }
   .nav-1 a:hover {
-    color: #ff27db;
+    color: #14f7ff;
   }
   .nav-1 a:active{
       color: #202020;
@@ -83,11 +83,12 @@ body{
     font-size: 20px;
 }
 .navba li a:hover{
-    color:  #ff27db;
+    color: #14f7ff;
 }
 .navba li a:active{
-    color:  #ff27dbbe;
+    color: #1ecbd1;
 }
+/*
 .productos{
     position: static;
 }
@@ -141,19 +142,4 @@ body{
 }
 .content-venta-tachado{
     text-decoration:line-through red;
-}
-button{
-    margin: 15px;
-    position: relative;
-    text-align: center;
-    padding: 15px;
-    background-color: rgb(0, 112, 216);
-    border: none;
-    color: white;
-    border-radius: 20px;
-    font-size: 15px;
-    width: 130px;
-}
-button:hover{
-    background-color: #0026ff;
 }

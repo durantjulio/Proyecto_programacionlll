@@ -45,7 +45,7 @@ body{
       margin: 0 none;
   }
   .nav-1 a:hover {
-    color: #ff27db;
+    color: #14f7ff;
   }
   .nav-1 a:active{
       color: #202020;
@@ -83,10 +83,10 @@ body{
     font-size: 20px;
 }
 .navba li a:hover{
-    color:  #7a0066;
+    color: #14f7ff;
 }
 .navba li a:active{
-    color:  #ff27dbbe;
+    color: #25cbd1;
 }
 .innovacion{
     position:static;

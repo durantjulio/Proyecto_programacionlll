@@ -5,7 +5,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Productos</title>
     <link rel="stylesheet" href="producto.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+     integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" 
+     crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="producto.css">
     <script src="producto.js" defer></script>
+    <style>
+         .productos {
+            margin: 20px;
+        }
+        .content-venta {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .img-1, .img-2, .img-3,.img-4, .img-5, .img-6,.img-7, .img-8 {
+            margin: 20px;
+            text-align: center;
+            background-color: white;
+            padding: 25px;
+            border-radius: 10px;
+            box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.534);
+            transition: transform 0.2s; /* Animación al tocar */
+        }
+        .img-1:hover, .img-2:hover, .img-3:hover, .img-4:hover, .img-5:hover, .img-6:hover,.img-7:hover, .img-8:hover {
+            transform: scale(1.05); /* Escala al pasar el mouse */
+        }
+        .buy-button {
+            background-color: #007BFF; /* Color del botón */
+            color: white;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s; /* Animación */
+        }
+        .buy-button:hover {
+            background-color: #0056b3; /* Color más oscuro al pasar el mouse */
+            transform: translateY(-2px); /* Levanta el botón al pasar el mouse */
+        }
+        .bold-designer{
+            font-size: 70%;
+        }
+        .content-venta-tachado{
+            text-decoration:line-through red;
+        }
+        .icon {
+            font-size: 34px; /* Tamaño del ícono */
+            margin-right: 8px; /* Espaciado entre íconos y texto */
+        }
+    </style>
 </head>
 <body>
     <section class="part_nav">
@@ -13,19 +64,19 @@
             <header>
                 <nav class="nav-1">
                     <ul>
-                        <li><p><a href="">Envio gratuito</a></p></li>
+                        <li class="error"><a href="/contacto.html"><i class="fa-solid fa-gear icon"></i></a></li>
                         <li><input type="text" placeholder="indique un juego" /></li>
-                        <li class="carrito"><a href="carrito.html"><img src="/src/pngwing.com (21).png" alt="" width="50px" height="50px"></a></li>
+                        <li class="carrito"><a href="carrito.html"><i class="fa-solid fa-cart-shopping icon"></i></a></li>
                         <li><a href="iniciar_sesion.html"><p>Iniciar Secion</p></a></li>
                     </ul>
                 </nav>
                 <div class="menu encabezado">
                     <nav class="navba">
                         <ul>
-                            <li><a href="/index.html">inicio</a></li>
-                            <li><a href="/nostros.html">nosotros</a></li>
-                            <li><a href="/contacto.html">contacto</a></li>
-                            <li><a href="producto.html">producto</a></li>
+                            <li><a href="/index.html">Inicio</a></li>
+                            <li><a href="/nostros.html">Nosotros</a></li>
+                            <li><a href="/contacto.html">Contacto</a></li>
+                            <li><a href="producto.html">Producto</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -35,25 +86,60 @@
     <section class="productos">
         <div class="content-venta">
             <div class="img-1">
-                <img src="1.png" alt="" width="200px" height="200px">
+                <img src="/src/laptop.jpg.jpeg" alt="" width="200px" height="200px">
                 <p><span class="bold-designer"><strong>Producto 1</strong></span><br>
                     <span class="content-venta-tachado">$ 100.00 </span> <strong class="bold">$70</strong>
                 </p>
                 <button class="buy-button" data-product-id="1" data-product-name="Producto 1" data-product-price="70">comprar</button>
             </div>
             <div class="img-2">
-                <img src="16.png" alt="" width="200px" height="200px">
+                <img src="/src/tlf.jpg.jpeg" alt="" width="200px" height="200px">
                 <p><span class="bold-designer"><strong>Producto 2</strong></span><br>
                     <span class="content-venta-tachado">$ 100.00 </span> <strong class="bold">$70</strong>
                 </p>
                 <button class="buy-button" data-product-id="2" data-product-name="Producto 2" data-product-price="70">comprar</button>
             </div>
             <div class="img-3">
-                <img src="3.png" alt="" width="200px" height="200px">
+                <img src="/src/descarga (1).jpg" alt="" width="200px" height="200px">
                 <p><span class="bold-designer"><strong>Producto 3</strong></span><br>
                     <span class="content-venta-tachado">$ 100.00 </span> <strong class="bold">$70</strong>
                 </p>
                 <button class="buy-button" data-product-id="3" data-product-name="Producto 3" data-product-price="70">comprar</button>
+            </div>
+            <div class="img-4">
+                <img src="/src/pcpi22.jpeg" alt="" width="200px" height="200px">
+                <p><span class="bold-designer"><strong>Producto 4</strong></span><br>
+                    <span class="content-venta-tachado">$ 100.00 </span> <strong class="bold">$70</strong>
+                </p>
+                <button class="buy-button" data-product-id="4" data-product-name="Producto 4" data-product-price="70">comprar</button>
+            </div>
+            <div class="img-5">
+                <img src="/src/equipazo.jpeg" alt="" width="200px" height="200px">
+                <p><span class="bold-designer"><strong>Producto 5</strong></span><br>
+                    <span class="content-venta-tachado">$ 100.00 </span> <strong class="bold">$70</strong>
+                </p>
+                <button class="buy-button" data-product-id="5" data-product-name="Producto 5" data-product-price="70">comprar</button>
+            </div>
+            <div class="img-6">
+                <img src="/src/equipazo2.jpeg" alt="" width="200px" height="200px">
+                <p><span class="bold-designer"><strong>Producto 6</strong></span><br>
+                    <span class="content-venta-tachado">$ 100.00 </span> <strong class="bold">$70</strong>
+                </p>
+                <button class="buy-button" data-product-id="6" data-product-name="Producto 6" data-product-price="70">comprar</button>
+            </div>
+            <div class="img-5">
+                <img src="/src/laptico.jpeg" alt="" width="200px" height="200px">
+                <p><span class="bold-designer"><strong>Producto 7</strong></span><br>
+                    <span class="content-venta-tachado">$ 100.00 </span> <strong class="bold">$70</strong>
+                </p>
+                <button class="buy-button" data-product-id="7" data-product-name="Producto 7" data-product-price="70">comprar</button>
+            </div>
+            <div class="img-6">
+                <img src="/src/Computer.jpg" alt="" width="200px" height="200px">
+                <p><span class="bold-designer"><strong>Producto 8</strong></span><br>
+                    <span class="content-venta-tachado">$ 100.00 </span> <strong class="bold">$70</strong>
+                </p>
+                <button class="buy-button" data-product-id="8" data-product-name="Producto 8" data-product-price="70">comprar</button>
             </div>
             <!-- Agrega más productos según sea necesario -->
         </div>
