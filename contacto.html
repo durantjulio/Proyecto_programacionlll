@@ -126,5 +126,29 @@ h1:hover {
                 </form>
             </div>
         </section>
+        <script>
+            document.querySelector('form').addEventListener('submit', function(event) {
+    event.preventDefault(); // Prevenir el envío predeterminado
+
+    // Aquí puedes agregar una validación adicional si es necesario
+
+    fetch(this.action, {
+        method: this.method,
+        body: new FormData(this),
+        headers: {
+            'Accept': 'application/json'
+        }
+    }).then(response => {
+        if (response.ok) {
+            alert('Mensaje enviado con éxito!');
+            this.reset(); // Reiniciar el formulario
+        } else {
+            alert('Error al enviar el mensaje. Por favor, intenta nuevamente.');
+        }
+    }).catch(error => {
+        alert('Error en la conexión. Por favor, intenta nuevamente.');
+    });
+});
+        </script>
 </body>
 </html>

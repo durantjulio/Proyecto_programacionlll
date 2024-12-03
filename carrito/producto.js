@@ -8,11 +8,13 @@ document.addEventListener('DOMContentLoaded', () => {
             const productId = button.getAttribute('data-product-id');
             const productName = button.getAttribute('data-product-name');
             const productPrice = button.getAttribute('data-product-price');
+            const productImageUrl = button.getAttribute('data-product-image'); // Obtener la URL de la imagen
 
             const product = {
                 id: productId,
                 name: productName,
-                price: productPrice
+                price: productPrice,
+                image: productImageUrl // Incluir la URL de la imagen en el objeto del producto
             };
 
             addToCart(product);

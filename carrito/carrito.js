@@ -19,6 +19,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const productDiv = document.createElement('div');
             productDiv.classList.add('cart-item');
             productDiv.innerHTML = `
+                <img src="${product.image}" alt="${product.name}" width="50" height="50" style="margin-right: 10px;">
                 <p>${product.name} - $${product.price}</p>
                 <button class="remove-button" data-index="${index}">Eliminar</button>
             `;
