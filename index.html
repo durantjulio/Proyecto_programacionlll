@@ -10,12 +10,16 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
      integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" 
      crossorigin="anonymous" referrerpolicy="no-referrer" />
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" 
+     integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" 
+     crossorigin="anonymous" referrerpolicy="no-referrer" />
     <style>
 
         .icon {
             font-size: 34px; /* Tamaño del ícono */
             margin-right: 8px; /* Espaciado entre íconos y texto */
         }
+        
         .cara_pag{
             position: relative;
             background-image:url(src/fondo-hexagonos.png);
@@ -91,7 +95,11 @@
             <header>
             <nav class="nav-1">
                 <ul>
-                    <li class="error"><a href="contacto.html"><i class="fa-solid fa-gear icon"></i></a></liU>                    <li><input type="text" placeholder="indique un juego" /></li>
+                    <li class="error"><a href="contacto.html"><i class="fa-solid fa-gear icon"></i></a></liU>                   
+                        <li>
+                            <input type="text" id="searchInput" placeholder="Buscar producto" />
+                            <button id="searchButton"><i class="fa-solid fa-search"></i></button>
+                        </li>
                     <li class="carrito"><a href="/carrito/carrito.html"><i class="fa-solid fa-cart-shopping icon"></i></a></li>
                     <li><a href="iniciar_sesion.html"><p>Iniciar Secion</p></a></li>
                 </ul>
@@ -212,5 +220,6 @@
         </div>
     </div>
 </section>
+<script src="search.js" defer></script>
 </body>
 </html>

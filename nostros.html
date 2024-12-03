@@ -14,6 +14,7 @@
             font-size: 34px; /* Tamaño del ícono */
             margin-right: 8px; /* Espaciado entre íconos y texto */
         }
+        
     </style>
 </head>
 
@@ -24,7 +25,10 @@
                 <nav class="nav-1">
                       <ul>
                     <li class="error"><a href="contacto.html"><i class="fa-solid fa-gear icon"></i></a></li>
-                    <li><input type="text" placeholder="indique un juego" /></li>
+                    <li>
+                        <input type="text" id="searchInput" placeholder="Buscar producto" />
+                        <button id="searchButton"><i class="fa-solid fa-search"></i></button>
+                    </li>
                     <li class="carrito"><a href="/carrito/carrito.html"><i class="fa-solid fa-cart-shopping icon"></i></a></li>
                     <li><a href="iniciar_sesion.html"><p>Iniciar Secion</p></a></li>
                 </ul>
@@ -45,8 +49,8 @@
     </section>
     <section class="part_content">
         <div class="titulo_content">
-            <h1>Corporación de Redes Tecnológicas, C.A</h1>
-            <h2>Accesorios de Computación, Impresión, Gadges y Línea blanca</h2>
+            <h1>MEWIN COMPANY</h1>
+            <h2>SHHH, MEWIN TECHNOLOGY</h2>
         </div>
         <div class="content_pri">
             <div class="mision">
@@ -67,27 +71,12 @@
             </div>
         </div>
         <div class="content_sec">
-            <div class="historia">
-                <h2>Nuestra Historia</h2>
-                <p>Destacados por ventas online. <br>
-
-                    Desde 2009, Corporación de Redes Tecnológicas, C.A es la tienda <br>
-                      líder en ventas online, por el mejor servicio y calidad de los  <br>
-                        productos. Además de ofrecerte productos como Computadoras, <br>
-                         Teléfonos celulares y Computadoras portátiles, contamos <br>
-                         con equipos de conexión wifi como amplificadoras y routers. <br>
-                    
-                    Nuestros clientes disfrutan de la experiencia de comprar en Corporación <br>
-                     de Redes Tecnológicas,C.A gracias a nuestros servicios de soporte en <br>
-                      productos y envíos a toda Venezuela. <br>
-                    
-                    Si buscas comprar algo nuevo, Corporación de Redes Tecnológicas,C.A <br>
-                     es tu mejor opción.</p>
-            </div>
+      
             <div class="img-1">
                 <img src="src/WhatsApp Image 2024-12-02 at 7.29.32 PM.jpeg" alt="" width="500px" height="500px">
             </div>
         </div>
     </section>
+    <script src="search.js" defer></script>
 </body>
 </html>

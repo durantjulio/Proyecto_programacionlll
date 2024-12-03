@@ -83,7 +83,10 @@ h1:hover {
             <nav class="nav-1">
                 <ul>
                     <li class="error"><a href="contacto.html"><i class="fa-solid fa-gear icon"></i></a></li>
-                    <li><input type="text" placeholder="indique un juego" /></li>
+                    <li>
+                        <input type="text" id="searchInput" placeholder="Buscar producto" />
+                        <button id="searchButton"><i class="fa-solid fa-search"></i></button>
+                    </li>
                     <li class="carrito"><a href="/carrito/carrito.html"><i class="fa-solid fa-cart-shopping icon"></i></a></li>
                     <li><a href="iniciar_sesion.html"><p>Iniciar Secion</p></a></li>
                 </ul>
@@ -126,6 +129,7 @@ h1:hover {
                 </form>
             </div>
         </section>
+        <script src="search.js" defer></script>
         <script>
             document.querySelector('form').addEventListener('submit', function(event) {
     event.preventDefault(); // Prevenir el envío predeterminado
