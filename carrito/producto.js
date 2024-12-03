@@ -27,7 +27,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 });
 document.addEventListener('DOMContentLoaded', () => {
-    const buyButtons = document.querySelectorAll('.buy-button');
     const specsButtons = document.querySelectorAll('.specs-button');
 
     buyButtons.forEach(button => {
